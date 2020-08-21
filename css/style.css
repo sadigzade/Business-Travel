@@ -151,7 +151,6 @@ a {
 }
 
 .about .container {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +271,7 @@ a {
   font-size: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 50px;
 }
 
@@ -283,15 +282,15 @@ a {
 .gallery-slider .slick-dots .slick-active:before {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background: #000;
   border-radius: 50px;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -43%);
-      -ms-transform: translate(-50%, -43%);
-          transform: translate(-50%, -43%);
+  -webkit-transform: translateX(-50%) translateY(-44%);
+      -ms-transform: translateX(-50%) translateY(-44%);
+          transform: translateX(-50%) translateY(-44%);
 }
 
 .travel {
@@ -336,4 +335,180 @@ a {
   padding: 23px 35px;
   letter-spacing: 2px;
   margin-top: 80px;
+}
+
+.nexttour {
+  margin: 150px;
+}
+
+.nexttour .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nexttour-photo {
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nexttour-content {
+  letter-spacing: 1.76px;
+}
+
+.nexttour-content__descr {
+  font-size: 22px;
+  color: #c4c4c4;
+}
+
+.nexttour-content__title {
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 600px;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+
+.nexttour-content__text {
+  font-size: 22px;
+  color: #5b5b5c;
+  margin-top: 55px;
+  max-width: 740px;
+}
+
+.booking {
+  padding: 155px 0;
+  background: #f4f4f4;
+}
+
+.booking .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking-header {
+  letter-spacing: 2px;
+  max-width: 40%;
+}
+
+.booking-header__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.booking-header__subtitle {
+  font-size: 18px;
+  color: #5b5b5c;
+  margin-top: 10px;
+}
+
+.booking-form {
+  width: 60%;
+}
+
+.booking-form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking-form__input {
+  border: 1px solid #7a7a7a;
+  height: 71px;
+  width: 304px;
+}
+
+.booking-form__input::-webkit-input-placeholder {
+  color: #3a4047;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.booking-form__input::-moz-placeholder {
+  color: #3a4047;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.booking-form__input:-ms-input-placeholder {
+  color: #3a4047;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.booking-form__input::-ms-input-placeholder {
+  color: #3a4047;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.booking-form__input::placeholder {
+  color: #3a4047;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.booking-form__btn {
+  background: #3a4047;
+  width: 247px;
+  height: 71px;
+  border: 1px solid #7a7a7a;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 90px 110px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.footer-nav ul a {
+  color: #000;
+}
+
+.footer-text {
+  font-size: 18px;
+  margin-top: 65px;
+}
+
+.footer-text__descr {
+  margin-top: 20px;
 }
