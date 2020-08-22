@@ -94,6 +94,7 @@ a {
 .home-menu {
   font-size: 20px;
   letter-spacing: 3px;
+  font-size: 20px;
 }
 
 .home-menu ul {
@@ -102,47 +103,58 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 425px;
+  width: 425px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .home-social {
-  font-size: 20px;
-  letter-spacing: 3px;
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  height: 0;
-  width: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 30%;
-  right: 23px;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 3px;
+  bottom: 44px;
+  left: 50%;
+  width: 500px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
 }
 
-.home-social__item {
-  margin-left: 20px;
+.home .media-social {
+  display: none;
 }
 
-.home-title {
-  margin-top: 310px;
+.home-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.home-header__title {
   font-weight: 700;
   font-size: 100px;
+  letter-spacing: 2px;
 }
 
-.home-subtitle {
+.home-header__subtitle {
   font-size: 30px;
   letter-spacing: 4.5px;
+  margin-top: 15px;
 }
 
-.home-btn__info {
+.home-header__btn {
   margin-top: 22px;
 }
 
@@ -511,4 +523,111 @@ a {
 
 .footer-text__descr {
   margin-top: 20px;
+}
+
+@media (max-width: 1674px) {
+  .home-menu {
+    font-size: 14px;
+  }
+
+  .home-social {
+    font-size: 14px;
+    width: 400px;
+  }
+
+  .home-header__title {
+    font-size: 60px;
+  }
+
+  .home-header__subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .global-btn {
+    font-size: 14px;
+  }
+
+  .home-header__title {
+    font-size: 40px;
+  }
+
+  .home-header__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-menu ul {
+    padding-top: 22px;
+  }
+
+  .home-social {
+    bottom: 22px;
+    font-size: 12px;
+  }
+
+  .home-header__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-menu ul {
+    width: 70%;
+  }
+
+  .home-social {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .global-btn {
+    font-size: 12px;
+    padding: 18px 40px;
+  }
+
+  .home-menu {
+    font-size: 10px;
+  }
+
+  .home-social {
+    display: none;
+  }
+
+  .home .media-social {
+    display: block;
+  }
+
+  .home .media-social ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+  }
+
+  .home .media-social ul img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .home-header__title {
+    font-size: 24px;
+  }
+
+  .home-header__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
